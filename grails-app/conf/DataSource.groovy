@@ -1,4 +1,4 @@
-import com.mongodb.WriteConcern
+
 grails {
     mongodb {
        databaseName = "demo" // the default database name
@@ -15,7 +15,7 @@ grails {
             connectTimeout = 300 // The connect timeout in milliseconds. 0 == infinite
             socketTimeout = 60000 // The socket timeout. 0 == infinite
             socketKeepAlive = false // Whether or not to have socket keep alive turned on
-//            writeConcern = new WriteConcern(0, 0, false) // Specifies the number of servers to wait for on the write operation, and exception raising behavior
+            // writeConcern = new WriteConcern(0, 0, false) // Specifies the number of servers to wait for on the write operation, and exception raising behavior
             sslEnabled = false // Specifies if the driver should use an SSL connection to Mongo
             // socketFactory = … // Specifies the SocketFactory to use for creating connections
         }
